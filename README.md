@@ -1,6 +1,18 @@
-echo # Randomfunstuff >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/Mscangel/Randomfunstuff.git
-git push -u origin master
+prices = {
+    "banana" : 4,
+    "apple"  : 2,
+    "orange" : 1.5,
+    "pear"   : 3,
+}
+stock = {
+    "banana" : 6,
+    "apple"  : 0,
+    "orange" : 32,
+    "pear"   : 15,
+}
+
+for key in prices:
+    print key
+    print "price: %s" % prices[key]
+    print "stock: %s" % stock[key]
+    total = 0
